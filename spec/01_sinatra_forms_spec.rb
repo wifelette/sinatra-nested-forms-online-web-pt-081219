@@ -39,6 +39,7 @@ describe "FormsLab::App" do
       expect(last_response.body).to include("pirate[ships][][booty]")
     end
 
+    # This test doesn't do what it thinks it does :p It's just testing the same thing twice, not testing for a second Ship form
     it "renders the second ship's input field for the name, type, and booty attributes on the page" do
       expect(last_response.body).to include("pirate[ships][][name]")
       expect(last_response.body).to include("pirate[ships][][type]")
